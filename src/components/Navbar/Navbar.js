@@ -17,7 +17,7 @@ const Navbar = () => {
               className="mr-2"
               icon={faEnvelope}
             ></FontAwesomeIcon>
-            info@projmantech.com
+            info@agence.com
           </span>
         </div>
         <div>
@@ -31,9 +31,10 @@ const Navbar = () => {
         </div>
         </div>
       </div>
-      <div className="navbar bg-white top-0 drop-shadow border-b tob-0 mx-auto w-full px-6 text-black font-semibold px-4">
-        {/* //-------------------------------------------Mobile menu Start---------------------------------------// */}
-        <div className="navbar-start">
+      <div className="navbar sticky overflow-hidden bg-white top-0 drop-shadow border-b tob-0 mx-auto w-full px-6 text-black font-semibold px-4">
+       <div className="container">
+         {/* //-------------------------------------------Mobile menu Start---------------------------------------// */}
+         <div className="navbar-start">
           <div className="dropdown">
             <button
               tabIndex={0}
@@ -103,20 +104,13 @@ const Navbar = () => {
                 <a
                   href="#"
                   className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
           {/* //-------------------------------------------Mobile menu end---------------------------------------// */}
-          <div className="navbar-center hidden md:flex">
+          <div className="navbar-center hidden md:flex" style={{marginTop:"-20px"}}>
             <a href="/" className="font-bold uppercase lg:text-lg md:text-sm">
               <img className="h-[50px]" src={Logo} alt="logo" />
             </a>
@@ -153,14 +147,6 @@ const Navbar = () => {
                 features
               </a>
             </li>
-
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 rounded">
-                Pricing
-              </a>
-            </li>
             <li>
               <a
                 href="#"
@@ -185,13 +171,14 @@ const Navbar = () => {
           </ul>
         </div>
         {/* //-------------------------------------------Mobile menu Title---------------------------------------// */}
-        <div className="navbar-end w-full md:hidden">
+        <div className="navbar-end flex justify-end w-full md:hidden">
           <a href="/" className="font-bold uppercase lg:text-lg md:text-sm">
             <img className="h-[50px]" src={Logo} alt="logo" />
           </a>
         </div>
         {/* //-------------------------------------------Mobile menu Title---------------------------------------// */}
         {/* <hr /> */}
+       </div>
       </div>
     </>
   );
