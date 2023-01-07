@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         </div>
       </div>
-      <div className="navbar sticky overflow-hidden bg-white top-0 drop-shadow border-b tob-0 mx-auto w-full px-6 text-black font-semibold px-4">
+      <div className="navbar sticky bg-white top-0 drop-shadow border-b tob-0 mx-auto w-full px-6 text-black font-semibold px-4">
        <div className="container">
          {/* //-------------------------------------------Mobile menu Start---------------------------------------// */}
          <div className="navbar-start">
