@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../images/logo.png"
+
 const Login = () => {
     return (
         <div>
@@ -16,7 +16,7 @@ const Login = () => {
                                         href="javascript:void(0)"
                                         class="mx-auto inline-block max-w-[160px]"
                                     >
-                                        <img className="w-[100px] h-[100px]" src={logo} alt="logo" />
+                                        <img src="" alt="logo" />
                                     </a>
                                 </div>
                                 <form>
@@ -114,7 +114,7 @@ const Login = () => {
                                         href="javascript:void(0)"
                                         class="text-primary hover:underline"
                                     >
-                                         Sign Up
+                                        Sign Up
                                     </a>
                                 </p>
 

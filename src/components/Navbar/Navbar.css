@@ -1,0 +1,42 @@
+
+/* Top and Bottom borders go out */
+.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: rgb(245, 5, 5);
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.animateMenu a
+{
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    font: 18px Raleway;
+    margin: 0px 10px;
+    padding: 6px 6px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
